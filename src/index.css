@@ -1,4 +1,58 @@
+
 body {
-  background: black;
   color: wheat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+.grid-item {
+  color: wheat;
+  padding: 5%;
+}
+
+.photo-column {
+  background-image: url(./assets/images.jpeg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: auto 50%;
+  
+}
+
+.text-column {
+  color: black;
+}
+
+.videoBlock {
+  size: auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  a {
+    font-size: .8rem;
+  }
+
 }
